@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teaching, Learning and Research in the Age of Ethical AI | MITAOE</title>
+  <meta name="description" content="Guidelines for responsible, transparent and ethical use of AI in teaching, learning, assessment and research at MIT Academy of Engineering, Pune." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ── PRINT-ONLY HEADER ── -->
+<div class="print-header" aria-hidden="true">
+  <img src="img/logo.png" alt="MIT Academy of Engineering" class="ph-logo-img" />
+  <div class="ph-meta">AI Integration Guidelines · Academic Year 2025–2026</div>
+  <div class="ph-url">mitaoe.ac.in</div>
+</div>
+
+<!-- ══════════════════ TOP NAV ══════════════════ -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a class="brand" href="#">
+      <img src="img/logo.png" alt="MIT Academy of Engineering" class="brand-logo-img" />
+    </a>
+    <div class="nav-actions">
+      <button class="btn-sm btn-ghost" id="btn-print">⎙ Print</button>
+      <a class="btn-sm btn-accent" href="#" onclick="switchTab('teachers');document.getElementById('disclosure').scrollIntoView({behavior:'smooth'});return false;">Disclosure Format</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════ HERO ══════════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">Academic Year 2025–2026</div>
+      <div class="hero-guideline-label">AI Integration Guidelines</div>
+      <h1>Teaching, Learning and Research<br />in the Age of <em>Ethical AI</em></h1>
+      <p class="hero-sub">A practical companion to the MITAOE AI Policy — turning institutional principles into daily classroom, assessment, research and ethical decisions.</p>
+    </div>
+    <div class="hero-pills">
+      <div class="h-pill"><div class="h-pill-val">May 2026</div><div class="h-pill-lbl">Effective from</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════════════ TAB BAR ══════════════════ -->
+<div class="tab-bar">
+  <div class="tab-bar-inner">
+    <button class="tab-btn active" data-tab="teachers" onclick="switchTab('teachers')">
+      <span class="tab-icon">👩‍🏫</span>
+      <span class="tab-label">Teachers</span>
+      <span class="tab-sub">Faculty Guidelines</span>
+    </button>
+    <button class="tab-btn" data-tab="students" onclick="switchTab('students')">
+      <span class="tab-icon">🎓</span>
+      <span class="tab-label">Students</span>
+      <span class="tab-sub">Student Guidelines</span>
+    </button>
+    <button class="tab-btn" data-tab="research" onclick="switchTab('research')">
+      <span class="tab-icon">🔬</span>
+      <span class="tab-label">Research</span>
+      <span class="tab-sub">Scholarly Integrity</span>
+    </button>
+    <button class="tab-btn" data-tab="ethics" onclick="switchTab('ethics')">
+      <span class="tab-icon">⚖️</span>
+      <span class="tab-label">Ethics</span>
+      <span class="tab-sub">Responsible AI</span>
+    </button>
+  </div>
+</div>
+
+<!-- Policy strip -->
+<div class="policy-strip">
+  <div class="ps-item"><strong>Applicable to</strong> All Teaching, Adjunct, Visiting, Research Staff &amp; Students</div>
+  <div class="ps-item"><strong>Scope</strong> Classroom · Assessment · Research · Publications · Ethics</div>
+  <div class="ps-item"><strong>Institute</strong> <a href="https://mitaoe.ac.in/" target="_blank" rel="noopener" style="color:#f5a133;">mitaoe.ac.in ↗</a></div>
+</div>
+
+
+<!-- ══════════════════ PAGE LAYOUT ══════════════════ -->
+<div class="page-layout">
+
+  <!-- ── SIDEBAR ── -->
+  <aside class="sidebar">
+
+    <!-- Teachers TOC -->
+    <nav class="toc toc-panel" id="toc-teachers">
+      <div class="toc-hd">Teachers</div>
+      <ul>
+        <li><a href="#foreword"><span class="toc-dot"></span>Foreword</a></li>
+        <hr />
+        <li><a href="#principles"><span class="toc-dot"></span>Foundational Principles</a></li>
+        <li><a href="#outcomes"><span class="toc-dot"></span>Learning Outcomes</a></li>
+        <li><a href="#levels"><span class="toc-dot"></span>AI Permission Levels</a></li>
+        <li><a href="#assessment"><span class="toc-dot"></span>Assessment Framework</a></li>
+        <li><a href="#disclosure"><span class="toc-dot"></span>AI Disclosure Statement</a></li>
+        <li><a href="#mentoring"><span class="toc-dot"></span>Mentoring Students</a></li>
+        <li><a href="#dosdonts"><span class="toc-dot"></span>Do's &amp; Don'ts</a></li>
+        <li><a href="#references-t"><span class="toc-dot"></span>References</a></li>
+      </ul>
+      <a class="toc-dl" href="#disclosure">↓ Disclosure Format</a>
+    </nav>
+
+    <!-- Students TOC -->
+    <nav class="toc toc-panel hidden" id="toc-students">
+      <div class="toc-hd">Students</div>
+      <ul>
+        <li><a href="#s-intro"><span class="toc-dot"></span>Introduction</a></li>
+        <hr />
+        <li><a href="#s-understand"><span class="toc-dot"></span>Understanding AI</a></li>
+        <li><a href="#s-permitted"><span class="toc-dot"></span>When AI is Permitted</a></li>
+        <li><a href="#s-disclosure"><span class="toc-dot"></span>Disclosure Requirements</a></li>
+        <li><a href="#s-integrity"><span class="toc-dot"></span>Academic Integrity</a></li>
+        <li><a href="#s-skills"><span class="toc-dot"></span>Skills AI Can't Replace</a></li>
+        <li><a href="#s-dosdonts"><span class="toc-dot"></span>Do's &amp; Don'ts</a></li>
+        <li><a href="#s-tools"><span class="toc-dot"></span>Approved Tools</a></li>
+      </ul>
+    </nav>
+
+    <!-- Research TOC -->
+    <nav class="toc toc-panel hidden" id="toc-research">
+      <div class="toc-hd">Research</div>
+      <ul>
+        <li><a href="#r-intro"><span class="toc-dot"></span>Research &amp; AI</a></li>
+        <hr />
+        <li><a href="#r-permitted"><span class="toc-dot"></span>Cautious AI Uses</a></li>
+        <li><a href="#r-prohibited"><span class="toc-dot"></span>Prohibited Uses</a></li>
+        <li><a href="#r-workflow"><span class="toc-dot"></span>Research Workflow</a></li>
+        <li><a href="#r-authorship"><span class="toc-dot"></span>Authorship &amp; Ethics</a></li>
+        <li><a href="#r-data"><span class="toc-dot"></span>Data Privacy</a></li>
+        <li><a href="#r-citation"><span class="toc-dot"></span>Citation &amp; Attribution</a></li>
+        <li><a href="#r-checklist"><span class="toc-dot"></span>Integrity Checklist</a></li>
+      </ul>
+    </nav>
+
+    <!-- Ethics TOC -->
+    <nav class="toc toc-panel hidden" id="toc-ethics">
+      <div class="toc-hd">Ethics</div>
+      <ul>
+        <li><a href="#e-why"><span class="toc-dot"></span>Why Ethics Matters</a></li>
+        <hr />
+        <li><a href="#e-principles"><span class="toc-dot"></span>Core Principles</a></li>
+        <li><a href="#e-bias"><span class="toc-dot"></span>Bias &amp; Fairness</a></li>
+        <li><a href="#e-privacy"><span class="toc-dot"></span>Privacy &amp; Consent</a></li>
+        <li><a href="#e-environment"><span class="toc-dot"></span>Environmental Impact</a></li>
+        <li><a href="#e-equity"><span class="toc-dot"></span>Equity &amp; Access</a></li>
+        <li><a href="#e-scenarios"><span class="toc-dot"></span>Ethical Scenarios</a></li>
+        <li><a href="#e-framework"><span class="toc-dot"></span>Decision Framework</a></li>
+      </ul>
+    </nav>
+
+  </aside>
+
+  <!-- ── MAIN CONTENT ── -->
+  <main class="content">
+
+    <!-- ═══════════════════════════════════
+         TAB 1: TEACHERS
+         ═══════════════════════════════════ -->
+    <div class="tab-content active" id="tab-teachers">
+
+      <!-- FOREWORD -->
+      <section class="sec" id="foreword">
+        <p class="sec-tag">Foreword</p>
+        <h2 class="sec-title">Why These Guidelines Exist</h2>
+        <p class="sec-lead">AI has become the operating environment of higher education, not a future prospect. These guidelines translate the MITAOE AI Policy into daily decisions — what to do on the first day of semester, how to design assessments, how to handle suspected misuse, and how to use AI responsibly.</p>
+        <div class="pullquote">
+          "The intent is not to police AI. The intent is to graduate engineers and designers who can <strong>think with AI</strong>, think against it when needed, and think beyond it altogether."
+        </div>
+        <p style="font-size:13.5px;color:var(--muted);line-height:1.75;">These guidelines are written so any faculty member can read only the section relevant to their immediate task — preparing a syllabus, redesigning an assessment, drafting a paper — without reading the full document. Revisit them each semester, because AI capability keeps evolving.</p>
+      </section>
+
+      <!-- PRINCIPLES -->
+      <section class="sec" id="principles">
+        <p class="sec-tag">Foundational Principles</p>
+        <h2 class="sec-title">Ten Principles Every <span>Faculty Member Must Know</span></h2>
+        <p class="sec-lead">These underpin every guideline in this document — classroom, course design, assessment, research and ethics.</p>
+        <div class="principles-grid">
+          <div class="pc"><div class="pc-icon">⚖️</div><div><h3>You are accountable, not the AI</h3><p>Whatever AI produces — lesson plan, rubric, research paragraph — you remain fully responsible for its accuracy, fairness and quality.</p></div></div>
+          <div class="pc"><div class="pc-icon">📢</div><div><h3>Disclose your own AI use first</h3><p>State on Day 1 which AI tools you used to prepare the course. Students cannot be expected to disclose what they see their teachers hide.</p></div></div>
+          <div class="pc"><div class="pc-icon">🔍</div><div><h3>Verify before you share</h3><p>Treat every AI output as a draft from a confident but unreliable assistant. Check facts, citations, formulas and code before class.</p></div></div>
+          <div class="pc"><div class="pc-icon">🔒</div><div><h3>Never share confidential data</h3><p>Student records, marks, unpublished research and exam papers must not enter any public AI tool. Use only institution-approved tools.</p></div></div>
+          <div class="pc"><div class="pc-icon">📚</div><div><h3>Build your own AI literacy first</h3><p>Complete the AI literacy orientation before integrating AI into a course. We cannot guide students through territory we haven't walked.</p></div></div>
+          <div class="pc"><div class="pc-icon">🎯</div><div><h3>Extend pedagogy, don't replace it</h3><p>AI removes drudgery so more class time goes to discussion, lab work and design critique — exactly where deep learning of the Student happens.</p></div></div>
+          <div class="pc"><div class="pc-icon">🌍</div><div><h3>Design for equity</h3><p>Not every student has a paid subscription. Every AI-permitted task must be completable with free tools.</p></div></div>
+          <div class="pc"><div class="pc-icon">🇮🇳</div><div><h3>Localise actively</h3><p>Most AI models reflect Western, English data. Adjust examples, names and case studies to Indian engineering and design contexts.</p></div></div>
+          <div class="pc"><div class="pc-icon">©️</div><div><h3>Respect intellectual property</h3><p>Do not upload copyrighted textbooks or paywalled articles to AI tools. Cite AI-generated content following the institutional format (APA).</p></div></div>
+          <div class="pc"><div class="pc-icon">🔄</div><div><h3>Adapt every semester</h3><p>AI capability changes every quarter. Review your course AI policy each semester and share learnings with the AI Implementation Committee.</p></div></div>
+        </div>
+      </section>
+
+      <!-- LEARNING OUTCOMES -->
+      <section class="sec" id="outcomes">
+        <p class="sec-tag">Learning Outcomes</p>
+        <h2 class="sec-title">Redesign Outcomes that <span>AI Can Already Complete</span></h2>
+        <div class="outcomes-lead-box">
+          <p class="outcomes-lead-main">If a student can produce a passable answer in five minutes using AI, the outcome is testing the tool, not the student.</p>
+          <p class="outcomes-lead-fix">The fix: add <strong>local context</strong>, <strong>defence under questioning</strong>, or <strong>a tacit skill</strong> — none of which AI can easily fake.</p>
+        </div>
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Old Outcome <small style="opacity:.7;">(BT: Remember / Understand)</small></th>
+              <th>Revised Outcome — Higher-Order Thinking</th>
+              <th style="white-space:nowrap;">BT Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Summarise Topic X</td><td>Compare two approaches to X, justify a choice for a given engineering context, and defend it in a viva</td><td><span class="bt bt-evaluate">Evaluate — L5</span></td></tr>
+            <tr><td>Explain how a system works</td><td>Diagnose a fault in a malfunctioning system, identify root cause, and recommend corrective action</td><td><span class="bt bt-analyse">Analyse — L4</span></td></tr>
+            <tr><td>Write code to solve a problem</td><td>Design, debug and justify a working solution — then critically evaluate an AI-generated solution to the same problem</td><td><span class="bt bt-create">Create — L6</span></td></tr>
+            <tr><td>Analyse a case study</td><td>Evaluate an Indian industry case using own field-visit observations, draw evidence-based conclusions, and present orally</td><td><span class="bt bt-evaluate">Evaluate — L5</span></td></tr>
+            <tr><td>Draft a project report</td><td>Design a solution, produce the project technical report, and defend methodology, trade-offs and limitations in a viva</td><td><span class="bt bt-create">Create — L6</span></td></tr>
+          </tbody>
+        </table>
+        <p style="font-size:11.5px;color:var(--muted);margin-top:10px;">BT = Bloom's Taxonomy revised levels: L4 Analyse · L5 Evaluate · L6 Create — the three higher-order levels AI cannot independently demonstrate.</p>
+        <div class="callout callout-info" style="margin-top:18px;">
+          <div class="callout-icon">💡</div>
+          <p><strong>Three-question test for every Course Outcome:</strong> (1) Can AI produce a passable answer in 5 minutes? (2) Which part can only be demonstrated personally, in front of me? (3) Where does the student have to use judgement or tacit skill? If a CO fails these, rewrite it.</p>
+        </div>
+      </section>
+
+      <!-- AI PERMISSION LEVELS -->
+      <section class="sec" id="levels">
+        <p class="sec-tag">Course-Level AI Stance</p>
+        <h2 class="sec-title">Five AI Permission Levels</h2>
+        <p class="sec-lead">Choose your course level before the semester. State it in the syllabus, on the LMS, and on Day 1 — students should never have to guess what is permitted.</p>
+        <div class="levels">
+          <div class="lv lv1"><div class="lv-badge"><div class="lv-num">1</div><div class="lv-tag">Forbidden</div></div><div class="lv-body"><h4>No AI of any kind</h4><p>For foundational courses where the unaided skill is the objective — first-year maths, core programming logic, technical drawing.</p></div></div>
+          <div class="lv lv2"><div class="lv-badge"><div class="lv-num">2</div><div class="lv-tag">Ideation</div></div><div class="lv-body"><h4>Brainstorm or outline only — no AI content in the final submission</h4><p>Structure and ideas must be the student's own. Suited to first-year writing and conceptual design courses.</p></div></div>
+          <div class="lv lv3"><div class="lv-badge"><div class="lv-num">3</div><div class="lv-tag">Editing</div></div><div class="lv-body"><h4>Grammar, syntax and reference formatting only</h4><p>Substantive content, analysis and conclusions must be the student's own. Suited to lab reports and technical writing.</p></div></div>
+          <div class="lv lv4"><div class="lv-badge"><div class="lv-num">4</div><div class="lv-tag">Collaborator</div></div><div class="lv-body"><h4>AI may co-produce — student must revise, justify and demonstrate understanding</h4><p>Suited to capstone projects, design studios and advanced electives. Disclosure and oral defence required.</p></div></div>
+          <div class="lv lv5"><div class="lv-badge"><div class="lv-num">5</div><div class="lv-tag">Integrated</div></div><div class="lv-body"><h4>Using AI effectively is itself the learning task</h4><p>Suited to AI ethics, prompt engineering and AI-assisted product design. The collaboration process is assessed directly.</p></div></div>
+        </div>
+        <div class="sample">
+          <div class="sample-tag">Sample Syllabus Statement — Level 3</div>
+          <p>"In this course, you may use AI for grammar correction, code-syntax checking and reference formatting only. AI-generated analysis, arguments or conclusions are not permitted. Every submission requires the AI Disclosure Statement. Undisclosed or out-of-scope use is treated as an academic integrity breach."</p>
+        </div>
+      </section>
+
+      <!-- ASSESSMENT -->
+      <section class="sec" id="assessment">
+        <p class="sec-tag">Assessment Framework</p>
+        <h2 class="sec-title">Three-Tier Assessment Structure</h2>
+        <p class="sec-lead">Map every assessment to one of three tiers. <strong>Every course must include at least one Tier 1 component</strong> contributing meaningfully to the final grade.</p>
+        <div class="tier-row">
+          <div class="tc tc1"><div class="tc-head"><div class="tc-label">Tier 1</div><h3>No AI</h3></div><div class="tc-body"><div class="tc-rule">Individual mastery under invigilation</div><p>The student works entirely independently. Confirms personal understanding without any AI support.</p><div class="tc-eg">Exams · Viva-voce · Lab practicals · In-class quizzes</div></div></div>
+          <div class="tc tc2"><div class="tc-head"><div class="tc-label">Tier 2</div><h3>Limited AI</h3></div><div class="tc-body"><div class="tc-rule">Ideation or review only — student demonstrates own reasoning</div><p>AI may scaffold the work; analysis, argument and conclusions must be the student's. Disclosure mandatory.</p><div class="tc-eg">Project reports · Term papers · Case studies · Design rationales</div></div></div>
+          <div class="tc tc3"><div class="tc-head"><div class="tc-label">Tier 3</div><h3>Full AI</h3></div><div class="tc-body"><div class="tc-rule">Effective AI use is part of the assessed task</div><p>Students are assessed on the quality of the artefact and the quality of their AI collaboration and critical judgement.</p><div class="tc-eg">AI-assisted design · Prompt engineering · AI ethics assignments</div></div></div>
+        </div>
+        <hr class="sec-divider" />
+        <h3 style="font-size:15px;font-weight:600;color:var(--navy);margin-bottom:14px;">When AI Misuse is Suspected</h3>
+        <div class="steps">
+          <div class="step"><div class="step-dot">1</div><div><h4>Meet promptly</h4><p>Talk to the student soon after submission while the work is fresh.</p></div></div>
+          <div class="step"><div class="step-dot">2</div><div><h4>State the concern specifically</h4><p>Identify exactly what raised concern and ask whether AI was used — without pre-judging.</p></div></div>
+          <div class="step"><div class="step-dot">3</div><div><h4>Give a fair opportunity to explain</h4><p>Allow the student to explain their process fully.</p></div></div>
+          <div class="step"><div class="step-dot">4</div><div><h4>Follow institutional procedure</h4><p>If concerns persist, refer to the MITAOE academic integrity procedure (including Grade Moderation, Answersheet Showing, and Rubrics-based Assessment) — do not act unilaterally on the grade.</p></div></div>
+          <div class="step"><div class="step-dot">5</div><div><h4>Make it a teaching moment</h4><p>Regardless of outcome, use the conversation to build responsible AI habits.</p></div></div>
+        </div>
+        <div class="callout callout-warning" style="margin-top:18px;">
+          <div class="callout-icon">⚠️</div>
+          <p><strong>Do not rely on AI-detection tools as sole evidence.</strong> False-positive rates are too high for disciplinary action. Do not input student work into public AI tools for detection purposes.</p>
+        </div>
+      </section>
+
+      <!-- DISCLOSURE -->
+      <section class="sec" id="disclosure">
+        <p class="sec-tag">Required for All Tier 2 &amp; Tier 3 Submissions</p>
+        <h2 class="sec-title">AI Disclosure Statement</h2>
+        <p class="sec-lead">Complete all four fields and attach to every Tier 2 and Tier 3 assignment. Partial disclosure is treated as non-disclosure. Faculty should adapt this format for their own course-preparation notes.</p>
+        <div class="disclosure-card">
+          <div class="disc-hd"><h3>AI DISCLOSURE STATEMENT</h3><p>Attach to every Tier 2 and Tier 3 submission · Partial disclosure = non-disclosure</p></div>
+          <div class="disc-row"><div class="disc-lbl">AI Tool(s) Used</div><div class="disc-val">List each tool by name and version — e.g., ChatGPT (GPT-4o), Claude 3.7 Sonnet, Google Gemini, GitHub Copilot, Grammarly AI.</div></div>
+          <div class="disc-row"><div class="disc-lbl">Purpose &amp; Role</div><div class="disc-val">What was the AI used for? — brainstorming, drafting, code assistance, data analysis, grammar correction, literature search, image generation, etc.</div></div>
+          <div class="disc-row"><div class="disc-lbl">Extent of Use</div><div class="disc-val">Describe the proportion of AI involvement — e.g., "20% of the code was AI-generated, then debugged and tested by me," or "AI drafted the introduction, which I substantially revised."</div></div>
+          <div class="disc-row"><div class="disc-lbl">Critical Evaluation</div><div class="disc-val">Briefly explain how you verified accuracy, corrected errors and ensured quality before including the AI output in this submission.</div></div>
+        </div>
+        <div class="sample">
+          <div class="sample-tag">Faculty Course-Preparation Disclosure (for your syllabus)</div>
+          <p>"Sections of this syllabus and the practice question set were drafted with assistance from [tool name and version]. All content has been reviewed, verified and revised by the course faculty, who bears full responsibility for accuracy and pedagogical appropriateness."</p>
+        </div>
+      </section>
+
+      <!-- MENTORING -->
+      <section class="sec" id="mentoring">
+        <p class="sec-tag">Mentoring Students</p>
+        <h2 class="sec-title">Guiding Students to <span>Use AI Well</span></h2>
+        <p class="sec-lead">Faculty are the most influential guides students have for responsible AI use. Model what you expect.</p>
+        <div class="cards2">
+          <div class="card card-blue"><div class="c-icon">🎓</div><h3>Model disclosure openly</h3><p style="font-size:12.5px;color:var(--muted);line-height:1.65;">Share how you used AI to prepare a lecture and what you changed. When students see disclosure as professional practice, they adopt it naturally.</p></div>
+          <div class="card card-blue card-featured"><div class="c-icon">🔍</div><h3>Coach verification as a graduate skill ⭐</h3><p style="font-size:12.5px;color:var(--muted);line-height:1.65;">Prompt design, hallucination recognition and source cross-checking are professional competencies increasingly tested in placement interviews. <strong>Verification is the most transferable AI skill you can teach.</strong></p></div>
+          <div class="card card-blue"><div class="c-icon">💬</div><h3>Require reflection, not just output</h3><p style="font-size:12.5px;color:var(--muted);line-height:1.65;">Ask students to articulate what AI contributed and what they added. That reflection is itself a learning outcome, and it builds metacognitive awareness.</p></div>
+          <div class="card card-blue"><div class="c-icon">🤝</div><h3>Treat early lapses as teaching moments</h3><p style="font-size:12.5px;color:var(--muted);line-height:1.65;">Where policy allows, guide before escalating. The goal is to build lasting disclosure habits — not to catch students out.</p></div>
+        </div>
+      </section>
+
+      <!-- DO'S & DON'TS -->
+      <section class="sec" id="dosdonts">
+        <p class="sec-tag">Quick Reference</p>
+        <h2 class="sec-title">Faculty Do's &amp; Don'ts</h2>
+        <p class="sec-lead">Print this and keep it at your desk or post it on your course LMS — <strong>Moodle</strong> or <strong>Google Classroom</strong>.</p>
+        <div class="dodonts">
+          <div class="dd">
+            <div class="dd-hd do-hd">✔ Do</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Disclose which AI tools you used to prepare the course on Day 1</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Verify every AI output for accuracy before sharing with students</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>State a clear AI permission level for each course and each assignment</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Include at least one Tier 1 (invigilated) assessment per course</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Draft feedback with AI — then review and personalise before sending</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Use only institution-approved tools for tasks involving student data</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Redesign any Course and Learning Outcomes that AI can complete in five minutes</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Revisit and update your course AI policy every semester</div>
+          </div>
+          <div class="dd">
+            <div class="dd-hd dont-hd">✗ Don't</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Present AI-drafted material as entirely your own</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Trust AI on technical accuracy without independent verification</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Leave students uncertain about what AI use is permitted</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Make all assessments open-ended take-home writing tasks</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Use AI to assign final grades without your own independent review</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Paste student names, roll numbers or marks into any public AI tool</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Carry pre-AI course outcomes unchanged into today's assessments</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Rely on AI-detection tools as sole basis for disciplinary action</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- REFERENCES (Teachers) -->
+      <section class="sec" id="references-t">
+        <p class="sec-tag">References &amp; Acknowledgements</p>
+        <h2 class="sec-title">Built on Global Best Practice</h2>
+        <p class="sec-lead">Drawn from leading universities and international bodies — adapted for engineering and design education at MITAOE.</p>
+        <div class="refs">
+          <div class="ref"><div class="ref-n">1</div><div class="ref-t"><strong>MITAOE AI Integrated Teaching &amp; Research Policy (2025–26)</strong>Internal foundational policy, MIT Academy of Engineering</div></div>
+          <div class="ref"><div class="ref-n">2</div><div class="ref-t"><strong>Harvard University</strong>Guidelines for Using Generative AI Tools at Harvard</div></div>
+          <div class="ref"><div class="ref-n">3</div><div class="ref-t"><strong>Stanford University</strong>Principles for AI Use (January 2025)</div></div>
+          <div class="ref"><div class="ref-n">4</div><div class="ref-t"><strong>King's College London</strong>University-wide Principles and Policy on Generative AI</div></div>
+          <div class="ref"><div class="ref-n">5</div><div class="ref-t"><strong>University of Sydney</strong>Aligning Assessments to the Age of Generative AI</div></div>
+          <div class="ref"><div class="ref-n">6</div><div class="ref-t"><strong>Aalto University</strong>AI Assessment Scale (AIAS) for Education</div></div>
+          <div class="ref"><div class="ref-n">7</div><div class="ref-t"><strong>NEP 2020</strong>Government of India — National Education Policy</div></div>
+          <div class="ref"><div class="ref-n">8</div><div class="ref-t"><strong>NITI Aayog</strong>Responsible AI for All: Adopting and Scaling Responsible AI in India</div></div>
+        </div>
+      </section>
+
+    </div><!-- /tab-teachers -->
+
+
+    <!-- ═══════════════════════════════════
+         TAB 2: STUDENTS
+         ═══════════════════════════════════ -->
+    <div class="tab-content hidden" id="tab-students">
+
+      <!-- INTRO -->
+      <section class="sec" id="s-intro">
+        <p class="sec-tag">Student Guidelines</p>
+        <h2 class="sec-title">AI is a Tool. <span>You are the Engineer.</span></h2>
+        <p class="sec-lead">AI tools can accelerate your learning, but they cannot replace your thinking, your judgement, or your professional skills. These guidelines tell you exactly what is allowed, what is not, and how to use AI in a way <span class="highlight-phrase">that actually makes you better — not just faster.</span></p>
+        <div class="pullquote">
+          "The goal is not to prevent you from using AI. It is to make sure that when you graduate, you can do things AI cannot — and you know the difference."
+        </div>
+        <div class="info-row">
+          <div class="info-card"><div class="info-num">6</div><div class="info-lbl">Core human skills that AI cannot replace</div></div>
+          <div class="info-card"><div class="info-num">5</div><div class="info-lbl">AI Permission Levels across your courses</div></div>
+          <div class="info-card"><div class="info-num">1</div><div class="info-lbl">Disclosure form required per Tier 2/3 submission</div></div>
+          <div class="info-card"><div class="info-num">0</div><div class="info-lbl">Tolerance for undisclosed AI use</div></div>
+        </div>
+      </section>
+
+      <!-- UNDERSTANDING AI -->
+      <section class="sec" id="s-understand">
+        <p class="sec-tag">Understanding AI Tools</p>
+        <h2 class="sec-title">What AI Can and <span>Cannot Do</span></h2>
+        <p class="sec-lead">Before you use AI, you need to know what it actually is — and what its limits are. This protects you from submitting incorrect work and from developing a false sense of understanding.</p>
+        <div class="cards2">
+          <div class="card card-green">
+            <div class="c-icon">✅</div>
+            <h3>What AI is Good At</h3>
+            <ul>
+              <li>Generating first drafts and outlines quickly</li>
+              <li>Explaining concepts in simple language</li>
+              <li>Debugging code and suggesting fixes</li>
+              <li>Summarising long documents</li>
+              <li>Grammar checking and language editing</li>
+              <li>Brainstorming ideas and alternatives</li>
+              <li>Formatting references and citations</li>
+            </ul>
+          </div>
+          <div class="card card-red">
+            <div class="c-icon">⚠️</div>
+            <h3>Where AI Fails Dangerously</h3>
+            <ul>
+              <li>It <strong>confabulates</strong> (invents) facts, names, citations</li>
+              <li>It cannot verify its own output</li>
+              <li>It reflects biases present in its training data</li>
+              <li>It cannot reason about your specific lab results</li>
+              <li>It cannot replace domain expertise or judgement</li>
+              <li>It has a knowledge cutoff — recent events may be wrong</li>
+              <li>It cannot ethically make decisions for you</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout callout-warning" style="margin-top:16px;">
+          <div class="callout-icon">⚠️</div>
+          <p><strong>Hallucination is real and dangerous.</strong> AI tools regularly fabricate references, paper titles, author names and even formulas — with complete confidence. Always verify AI-generated facts against a primary source before using them in any submission.</p>
+        </div>
+      </section>
+
+      <!-- WHEN PERMITTED -->
+      <section class="sec" id="s-permitted">
+        <p class="sec-tag">Permissions in Your Courses</p>
+        <h2 class="sec-title">When AI is Permitted — <span>Know Your Level</span></h2>
+        <p class="sec-lead">Each of your courses carries an AI Permission Level (1–5). Your faculty will declare this on Day 1 and in the course syllabus. If you are ever unsure, ask — do not assume.</p>
+        <div class="levels">
+          <div class="lv lv1"><div class="lv-badge"><div class="lv-num">1</div><div class="lv-tag">Forbidden</div></div><div class="lv-body"><h4>No AI use of any kind</h4><p>Typically first-year maths, programming fundamentals, technical drawing. The whole point is to build your unaided capability. Using AI here is an academic integrity violation.</p></div></div>
+          <div class="lv lv2"><div class="lv-badge"><div class="lv-num">2</div><div class="lv-tag">Ideation</div></div><div class="lv-body"><h4>You may use AI only to brainstorm or outline</h4><p>Your final submission must be entirely your own words and ideas. AI may help you organise thoughts, but cannot contribute any content to the submitted work.</p></div></div>
+          <div class="lv lv3"><div class="lv-badge"><div class="lv-num">3</div><div class="lv-tag">Editing</div></div><div class="lv-body"><h4>Grammar, syntax and reference formatting only</h4><p>You may use tools like Grammarly for language, or AI to format references. All analysis, argument and conclusions must be your own. Disclosure form required.</p></div></div>
+          <div class="lv lv4"><div class="lv-badge"><div class="lv-num">4</div><div class="lv-tag">Collaborator</div></div><div class="lv-body"><h4>AI may co-produce — but you must revise, justify and demonstrate understanding</h4><p>You must be able to explain every part of your submission. Expect oral defence or follow-up questions. Disclosure form is mandatory. Submitting AI output without understanding it is a violation.</p></div></div>
+          <div class="lv lv5"><div class="lv-badge"><div class="lv-num">5</div><div class="lv-tag">Integrated</div></div><div class="lv-body"><h4>Using AI well is itself the assessed skill</h4><p>You are being graded on how thoughtfully you collaborate with AI — your prompt quality, critical evaluation, and what you add beyond the AI output.</p></div></div>
+        </div>
+        <div class="callout callout-danger" style="margin-top:16px;">
+          <div class="callout-icon">🚨</div>
+          <p><strong>Using AI beyond the permitted level is an academic integrity breach</strong> — equivalent to plagiarism, regardless of whether you edited the output. The key rule: <em>when in doubt, disclose and ask your faculty member.</em></p>
+        </div>
+      </section>
+
+      <!-- STUDENT DISCLOSURE -->
+      <section class="sec" id="s-disclosure">
+        <p class="sec-tag">Disclosure Requirements</p>
+        <h2 class="sec-title">How to Disclose <span>Your AI Use</span></h2>
+        <p class="sec-lead">Disclosure is a professional practice — not an admission of wrongdoing. Engineers disclose their tools and methods; so do researchers and designers. Start building this habit now.</p>
+        <div class="disclosure-card">
+          <div class="disc-hd"><h3>STUDENT AI DISCLOSURE STATEMENT</h3><p>Attach to every Tier 2 and Tier 3 submission · Complete all fields honestly</p></div>
+          <div class="disc-row"><div class="disc-lbl">Tool(s) Used</div><div class="disc-val">Name every AI tool used — e.g., ChatGPT (GPT-4o), Gemini 1.5, Claude, GitHub Copilot, Grammarly. Include the version if known.</div></div>
+          <div class="disc-row"><div class="disc-lbl">How I Used It</div><div class="disc-val">Describe exactly what you asked the AI to do — generate an outline, check grammar, explain a concept, write code, summarise a paper, etc.</div></div>
+          <div class="disc-row"><div class="disc-lbl">What I Changed</div><div class="disc-val">Explain what you revised, added, corrected or replaced in the AI output — and why. "I used it as-is" is not acceptable for Tier 2/3 work.</div></div>
+          <div class="disc-row"><div class="disc-lbl">How I Verified</div><div class="disc-val">State how you checked the AI output for accuracy — cross-referencing textbooks, running code, consulting papers, checking calculations manually, etc.</div></div>
+        </div>
+        <div class="sample">
+          <div class="sample-tag">Example — Good Disclosure Statement</div>
+          <p>"I used ChatGPT (GPT-4o) to generate an initial outline for Section 2. I rewrote the entire section using my own analysis and added data from our lab experiment. I used Grammarly to check grammar only. I verified the formula on page 4 against the course textbook (Shigley, Chapter 6) because the AI output had an error in the stress equation."</p>
+        </div>
+      </section>
+
+      <!-- ACADEMIC INTEGRITY -->
+      <section class="sec" id="s-integrity">
+        <p class="sec-tag">Academic Integrity</p>
+        <h2 class="sec-title">What Counts as <span>AI Misuse</span></h2>
+        <p class="sec-lead">Academic integrity violations involving AI are treated the same as plagiarism at MITAOE. Understanding the line protects you.</p>
+        <div class="integrity-grid">
+          <div class="ig-card ig-ok">
+            <div class="ig-head">✅ Acceptable</div>
+            <div class="ig-row">Using AI to brainstorm ideas, then writing in your own words</div>
+            <div class="ig-row">Asking AI to explain a concept you then demonstrate yourself</div>
+            <div class="ig-row">Using AI to check grammar after writing your own content</div>
+            <div class="ig-row">Using AI to format your reference list</div>
+            <div class="ig-row">Submitting AI-co-produced work at Level 4/5 with a full disclosure form</div>
+            <div class="ig-row">Asking AI to review your code for errors, then understanding and fixing them yourself</div>
+          </div>
+          <div class="ig-card ig-no">
+            <div class="ig-head">🚫 Not Acceptable</div>
+            <div class="ig-row">Submitting AI-generated text without disclosure</div>
+            <div class="ig-row">Using AI beyond the permitted level for that course</div>
+            <div class="ig-row">Copying AI output without verifying or revising it</div>
+            <div class="ig-row">Submitting work you cannot explain or defend</div>
+            <div class="ig-row">Asking AI to answer exam or viva questions on your behalf</div>
+            <div class="ig-row">Using AI-generated citations without verifying they exist</div>
+          </div>
+        </div>
+        <div class="callout callout-info" style="margin-top:18px;">
+          <div class="callout-icon">💬</div>
+          <p><strong>If you're not sure — ask your faculty before submitting,</strong> not after. A quick question before submission is far better than an integrity inquiry after.</p>
+        </div>
+      </section>
+
+      <!-- SKILLS AI CAN'T REPLACE -->
+      <section class="sec" id="s-skills">
+        <p class="sec-tag">Your Competitive Advantage</p>
+        <h2 class="sec-title">6 Skills That <span>AI Cannot Replace</span></h2>
+        <p class="sec-lead">AI will be your professional tool throughout your career. But employers — and clients — hire the person, not the tool. These six human capabilities will define your edge as an engineer, researcher, and professional.</p>
+        <div class="skills-grid">
+
+          <div class="skill-card">
+            <div class="sk-num">01</div>
+            <div class="sk-icon">🔎</div>
+            <h3>Critical Evaluation</h3>
+            <p>Ability to verify, validate, question, and critically assess AI-generated information, evidence, and decisions. Knowing when AI is wrong — and why — is itself a graduate-level skill.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-num">02</div>
+            <div class="sk-icon">🧪</div>
+            <h3>Applied Competence</h3>
+            <p>Ability to apply knowledge effectively through practical execution, experimentation, demonstration, and real-world performance. AI cannot run your lab, calibrate your instrument, or take responsibility for your results.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-num">03</div>
+            <div class="sk-icon">🤝</div>
+            <h3>Reasoned Communication</h3>
+            <p>Ability to explain, justify, defend, and articulate decisions, methodology, and conclusions. In a viva, placement interview, or client meeting — you must own every word.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-num">04</div>
+            <div class="sk-icon">🌐</div>
+            <h3>Contextual Innovation</h3>
+            <p>Ability to apply knowledge creatively and ethically in domain-specific, local, interdisciplinary, or real-world contexts. AI optimises within a given frame; you define the frame and adapt it to reality.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-num">05</div>
+            <div class="sk-icon">💡</div>
+            <h3>Problem Framing &amp; Curiosity</h3>
+            <p>Knowing which problem to solve before solving it. Asking the right question — driven by intellectual curiosity and domain intuition — is something no AI can do on your behalf.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="sk-num">06</div>
+            <div class="sk-icon">⚖️</div>
+            <h3>Ethical Responsibility</h3>
+            <p>Taking ownership of decisions that affect people's safety, livelihoods and rights. AI cannot be held accountable — you can. This is the most irreplaceable skill of all.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- STUDENT DO'S & DON'TS -->
+      <section class="sec" id="s-dosdonts">
+        <p class="sec-tag">Quick Reference</p>
+        <h2 class="sec-title">Student Do's &amp; Don'ts</h2>
+        <p class="sec-lead">Save this and refer to it before every submission.</p>
+        <div class="dodonts">
+          <div class="dd">
+            <div class="dd-hd do-hd">✔ Do</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Check your course AI Permission Level before starting any assignment</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Submit the AI Disclosure Form with every Tier 2 and Tier 3 submission</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Verify every AI-generated fact, formula and citation independently</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Be able to explain and defend every part of your submitted work</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Use AI as a starting point — then add your own analysis and judgement</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Ask your faculty when you are unsure what is permitted</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Use free AI tools (ChatGPT free, Gemini) so cost is never a barrier</div>
+            <div class="dd-row"><span class="dd-ic do-ic">✔</span>Report AI errors and biases you notice — that critical eye has value</div>
+          </div>
+          <div class="dd">
+            <div class="dd-hd dont-hd">✗ Don't</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Submit AI-generated work without a disclosure form</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Assume AI output is accurate — always cross-check</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Use AI beyond the permission level for your course</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Submit work you cannot explain if your faculty asks about it</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Enter your classmates' names or personal data into public AI tools</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Rely on AI as a substitute for attending class or understanding concepts</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Use AI-generated references without verifying they actually exist</div>
+            <div class="dd-row"><span class="dd-ic dont-ic">✗</span>Let AI make ethical or safety decisions in your project</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- APPROVED TOOLS -->
+      <section class="sec" id="s-tools">
+        <p class="sec-tag">Approved &amp; Restricted Tools</p>
+        <h2 class="sec-title">Which Tools You <span>Can Use</span></h2>
+        <p class="sec-lead">The following guidance applies to personal academic work. Always check with your faculty for course-specific tool restrictions.</p>
+        <div class="tools-grid">
+          <div class="tool-col">
+            <div class="tool-head tool-green">✅ Generally Permitted (free tier)</div>
+            <div class="tool-item"><strong>ChatGPT (GPT-4o mini / free)</strong><span>Text, code, explanations — disclose use</span></div>
+            <div class="tool-item"><strong>Google Gemini (free)</strong><span>Writing, summarisation, research assistance</span></div>
+            <div class="tool-item"><strong>Microsoft Copilot (free)</strong><span>Integrated in Edge browser and Office apps</span></div>
+            <div class="tool-item"><strong>Grammarly (free tier)</strong><span>Grammar and language editing only</span></div>
+            <div class="tool-item"><strong>GitHub Copilot (student free)</strong><span>Code assistance — disclose in submissions</span></div>
+            <div class="tool-item"><strong>Google NotebookLM (free)</strong><span>Note-taking and study assistance</span></div>
+          </div>
+          <div class="tool-col">
+            <div class="tool-head tool-red">⚠️ Restrictions Apply</div>
+            <div class="tool-item"><strong>Any tool requiring data upload</strong><span>Do NOT upload exam papers, classmate data, or institute documents</span></div>
+            <div class="tool-item"><strong>AI image generators</strong><span>Check assignment brief — may not be permitted</span></div>
+            <div class="tool-item"><strong>Paid/institutional AI tools</strong><span>Only if institution-provided — do not use personal subscriptions for institute data</span></div>
+            <div class="tool-item"><strong>AI code-writing tools in exams</strong><span>Never permitted in any invigilated setting</span></div>
+            <div class="tool-item"><strong>AI paraphrasing tools</strong><span>Treated as submission of AI content — disclose and use carefully</span></div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /tab-students -->
+
+
+    <!-- ═══════════════════════════════════
+         TAB 3: RESEARCH
+         ═══════════════════════════════════ -->
+    <div class="tab-content hidden" id="tab-research">
+
+      <!-- RESEARCH INTRO -->
+      <section class="sec" id="r-intro">
+        <p class="sec-tag">Research &amp; Scholarly Integrity</p>
+        <h2 class="sec-title">AI in Research — <span>Clear Boundaries, High Standards</span></h2>
+        <p class="sec-lead">AI can accelerate research — but it cannot replace scientific rigour, ethical judgement, or the intellectual ownership that defines authorship. These guidelines align with national and international research-integrity norms, including UGC guidelines and major publisher policies.</p>
+        <div class="pullquote">
+          "AI is a research instrument, not a co-investigator. You control the hypothesis, the method, the interpretation and the accountability."
+        </div>
+        <div class="info-row">
+          <div class="info-card"><div class="info-num" style="color:var(--green)">⚠️</div><div class="info-lbl">Cautiously acceptable: AI-assisted writing, summarisation — always with full disclosure</div></div>
+          <div class="info-card"><div class="info-num" style="color:var(--red)">✗</div><div class="info-lbl">Never acceptable: AI authorship, fabricated data, undisclosed AI text</div></div>
+          <div class="info-card"><div class="info-num">📋</div><div class="info-lbl">Always required: Disclosure in all publications and grant submissions</div></div>
+        </div>
+      </section>
+
+      <!-- CAUTIOUS RESEARCH USES -->
+      <section class="sec" id="r-permitted">
+        <p class="sec-tag">Where AI May Be Used — With Caution</p>
+        <h2 class="sec-title">AI in Research — <span>Proceed Carefully</span></h2>
+        <p class="sec-lead">AI is not automatically permitted in research. Each use must be evaluated against your institution's policy, your target journal's guidelines, and your research ethics approval. The following areas <em>may</em> involve AI assistance — but only when appropriately disclosed, validated by the researcher, and consistent with the norms of your discipline. When in doubt, do not use AI, or consult your supervisor first.</p>
+
+        <div class="callout callout-warning" style="margin-bottom:18px;">
+          <div class="callout-icon">⚠️</div>
+          <p><strong>Important:</strong> Many journals, funding bodies, and ethics committees restrict or prohibit certain AI uses without explicit approval. Always check the specific requirements of your target venue before using any AI tool in your research workflow.</p>
+        </div>
+
+        <div class="research-grid">
+          <div class="rg-card">
+            <div class="rg-icon">📚</div>
+            <h3>Literature Discovery <span class="rg-caution">— Use carefully</span></h3>
+            <p>AI discovery tools (Elicit, Semantic Scholar, Consensus) may help identify relevant papers — but you must read the actual papers. Never cite based on an AI summary alone. Verify every reference independently; hallucinated citations are your responsibility.</p>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon">✍️</div>
+            <h3>Language &amp; Writing Editing <span class="rg-caution">— Limited scope only</span></h3>
+            <p>AI may assist with grammar, language clarity and structural editing — not with generating scientific content, arguments or conclusions. All intellectual contribution must originate from you. Many journals now restrict even language editing by AI.</p>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon">📊</div>
+            <h3>Data Analysis Support <span class="rg-caution">— Full transparency required</span></h3>
+            <p>AI-assisted analysis may be considered where the methodology is fully disclosed, reproducible, and independently validated. Never use AI to generate, smooth or adjust data — this constitutes research misconduct.</p>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon">🧪</div>
+            <h3>Experimental Design Input <span class="rg-caution">— Advisory only</span></h3>
+            <p>AI may be consulted as one input when exploring methodological options. However, the researcher must independently evaluate, justify, and take full ownership of every design choice — AI suggestions are not a substitute for expert judgement.</p>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon">💻</div>
+            <h3>Code &amp; Simulation Drafts <span class="rg-caution">— Validate rigorously</span></h3>
+            <p>AI-generated code for analysis pipelines may be used as a starting point — but must be fully understood, tested, and validated by the researcher before use. Errors in AI-generated code that affect results are the author's responsibility.</p>
+          </div>
+          <div class="rg-card">
+            <div class="rg-icon">🌐</div>
+            <h3>Translation &amp; Reference Formatting <span class="rg-caution">— Lower risk, still disclose</span></h3>
+            <p>AI formatting of reference lists or translation of your own text into another language carries lower risk — but must still be disclosed. Always verify that references are formatted correctly and that translated content preserves your intended meaning.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROHIBITED RESEARCH USES -->
+      <section class="sec" id="r-prohibited">
+        <p class="sec-tag">Prohibited Uses</p>
+        <h2 class="sec-title">Research Integrity <span>Red Lines</span></h2>
+        <p class="sec-lead">These acts constitute research misconduct — with consequences ranging from retraction and disciplinary action to career-ending sanctions.</p>
+        <div class="redlines">
+          <div class="rl-item">
+            <div class="rl-icon">🚫</div>
+            <div>
+              <h4>Data Fabrication &amp; Falsification</h4>
+              <p>Using AI to generate, alter or misrepresent data, results or findings is fabrication — one of the most serious forms of research misconduct. This includes "cleaning" data in ways that bias results.</p>
+            </div>
+          </div>
+          <div class="rl-item">
+            <div class="rl-icon">🚫</div>
+            <div>
+              <h4>Ghost-Writing Entire Papers</h4>
+              <p>Submitting an AI-generated manuscript as your own intellectual contribution — without substantial authorial involvement — is academic fraud, regardless of how much you edited it.</p>
+            </div>
+          </div>
+          <div class="rl-item">
+            <div class="rl-icon">🚫</div>
+            <div>
+              <h4>Listing AI as an Author</h4>
+              <p>AI cannot be an author on any publication, grant application, thesis or report. Authorship requires accountability, which AI cannot hold. This rule is enforced by all major publishers (Elsevier, Springer, Nature, IEEE).</p>
+            </div>
+          </div>
+          <div class="rl-item">
+            <div class="rl-icon">🚫</div>
+            <div>
+              <h4>Using Hallucinated Citations</h4>
+              <p>AI regularly invents paper titles, author names and journal details. Every reference must be manually verified against the actual source before submission. You are responsible for every citation in your paper.</p>
+            </div>
+          </div>
+          <div class="rl-item">
+            <div class="rl-icon">🚫</div>
+            <div>
+              <h4>Uploading Confidential Data to Public AI</h4>
+              <p>Unpublished research data, proprietary industry datasets, participant data and PII must never be entered into any public AI tool (ChatGPT, Gemini, Claude, etc.). Use only offline or institutionally approved tools.</p>
+            </div>
+          </div>
+          <div class="rl-item">
+            <div class="rl-icon">🚫</div>
+            <div>
+              <h4>Undisclosed AI Use in Peer Review</h4>
+              <p>Using AI to write peer review reports without disclosure violates the confidentiality and intellectual integrity of the peer review process. Many journals now explicitly prohibit this.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESEARCH WORKFLOW -->
+      <section class="sec" id="r-workflow">
+        <p class="sec-tag">Research Workflow</p>
+        <h2 class="sec-title">AI-Assisted Research <span>Step by Step</span></h2>
+        <p class="sec-lead">Here is a responsible research workflow that integrates AI at the right stages — and keeps the researcher in control at every critical decision point.</p>
+        <div class="workflow">
+          <div class="wf-step">
+            <div class="wf-num">1</div>
+            <div class="wf-body">
+              <h4>Define Your Research Question — Independently</h4>
+              <p>The research question must come from your expertise and understanding of the field. AI may help you refine it, but should not originate it.</p>
+              <div class="wf-ai">AI role: Use literature discovery tools to check if the question is novel</div>
+            </div>
+          </div>
+          <div class="wf-step">
+            <div class="wf-num">2</div>
+            <div class="wf-body">
+              <h4>Review the Literature</h4>
+              <p>Use AI tools to map the field quickly. Then read the actual papers — do not rely on AI summaries for your analysis or argument.</p>
+              <div class="wf-ai">AI role: Elicit, Consensus, Semantic Scholar for discovery · manual reading for understanding</div>
+            </div>
+          </div>
+          <div class="wf-step">
+            <div class="wf-num">3</div>
+            <div class="wf-body">
+              <h4>Design Methodology — You Decide</h4>
+              <p>Choose your research design, data collection method and analysis approach. You must be able to justify every methodological choice.</p>
+              <div class="wf-ai">AI role: Suggestion and sanity-check only — human expertise must validate</div>
+            </div>
+          </div>
+          <div class="wf-step">
+            <div class="wf-num">4</div>
+            <div class="wf-body">
+              <h4>Collect &amp; Analyse Data — With Full Integrity</h4>
+              <p>Data collection must follow your ethics approval. AI-assisted analysis is permitted but must be fully described in the methods section.</p>
+              <div class="wf-ai">AI role: Statistical analysis, visualisation, pattern detection — but never data modification</div>
+            </div>
+          </div>
+          <div class="wf-step">
+            <div class="wf-num">5</div>
+            <div class="wf-body">
+              <h4>Interpret &amp; Discuss — Your Intellectual Contribution</h4>
+              <p>The interpretation of results is the core of authorship. This is where your expertise, knowledge and judgement are irreplaceable.</p>
+              <div class="wf-ai">AI role: Language editing and structuring the discussion only</div>
+            </div>
+          </div>
+          <div class="wf-step">
+            <div class="wf-num">6</div>
+            <div class="wf-body">
+              <h4>Write, Disclose and Submit</h4>
+              <p>Document all AI tools used in the methods section or acknowledgements. Verify every reference. Confirm authorship criteria for all listed authors.</p>
+              <div class="wf-ai">AI role: Grammar, language clarity and reference formatting</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AUTHORSHIP & PUBLICATION ETHICS -->
+      <section class="sec" id="r-authorship">
+        <p class="sec-tag">Authorship &amp; Publication Ethics</p>
+        <h2 class="sec-title">Responsible <span>Authorship Rules</span></h2>
+        <p class="sec-lead">All publications from MITAOE must follow institutional and publisher guidelines on authorship and AI disclosure.</p>
+        <div class="cope-grid">
+          <div class="cope-card">
+            <div class="cope-icon">👤</div>
+            <h3>Who Qualifies as an Author</h3>
+            <p>Authors must satisfy the following authorship requirements:</p>
+            <ul>
+              <li>Substantial contribution to conception, design, data acquisition or analysis</li>
+              <li>Drafting or critically revising the intellectual content</li>
+              <li>Final approval of the submitted version</li>
+              <li>Accountability for all aspects of the work</li>
+            </ul>
+            <div class="cope-note">AI meets <strong>none</strong> of these criteria and cannot be listed as an author.</div>
+          </div>
+          <div class="cope-card">
+            <div class="cope-icon">🤖</div>
+            <h3>Disclosing AI Use in Publications</h3>
+            <p>The following must appear in every paper that used AI:</p>
+            <ul>
+              <li>Name and version of every AI tool used</li>
+              <li>Which sections or tasks involved AI assistance</li>
+              <li>How AI outputs were verified and revised</li>
+              <li>Confirmation that no confidential data was entered</li>
+            </ul>
+            <div class="cope-note">Typically placed in the <strong>Methods section</strong> or <strong>Acknowledgements</strong>.</div>
+          </div>
+        </div>
+        <div class="callout callout-info" style="margin-top:16px;">
+          <div class="callout-icon">📋</div>
+          <p><strong>Publisher policies:</strong> Elsevier, Springer Nature, IEEE, Taylor &amp; Francis, Wiley and most other major publishers now require explicit disclosure of AI use. Failure to disclose is treated as an ethical violation and can result in retraction.</p>
+        </div>
+      </section>
+
+      <!-- DATA PRIVACY -->
+      <section class="sec" id="r-data">
+        <p class="sec-tag">Data Privacy in Research</p>
+        <h2 class="sec-title">Protecting Research <span>Data &amp; Participants</span></h2>
+        <p class="sec-lead">Research data — especially participant data — carries legal and ethical obligations that must be maintained when using AI tools.</p>
+        <div class="cards2">
+          <div class="card card-red">
+            <div class="c-icon">🔒</div>
+            <h3>Never Enter Into Public AI</h3>
+            <ul>
+              <li>Participant names, demographics or identifiers</li>
+              <li>Unpublished experimental data or results</li>
+              <li>Proprietary industry or partner data</li>
+              <li>Medical or biometric data of any kind</li>
+              <li>Survey responses that can identify individuals</li>
+              <li>Draft manuscripts under journal embargo</li>
+            </ul>
+          </div>
+          <div class="card card-green">
+            <div class="c-icon">✅</div>
+            <h3>Safe AI Practices for Research</h3>
+            <ul>
+              <li>Anonymise or aggregate data before any AI analysis</li>
+              <li>Use institution-approved, privacy-compliant AI tools for sensitive work</li>
+              <li>Check that your AI tool has a data retention policy aligned with GDPR / DPDP Act 2023</li>
+              <li>Store all research data on institution-approved servers</li>
+              <li>Document your data-handling procedures for ethics review</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout callout-warning" style="margin-top:16px;">
+          <div class="callout-icon">⚠️</div>
+          <p><strong>India's Digital Personal Data Protection Act 2023 (DPDP Act)</strong> imposes obligations on institutions handling personal data. Entering participant data into a foreign AI tool may constitute a compliance breach. Always obtain explicit ethics clearance for your data-handling methodology.</p>
+        </div>
+      </section>
+
+      <!-- CITATION -->
+      <section class="sec" id="r-citation">
+        <p class="sec-tag">Citation &amp; Attribution</p>
+        <h2 class="sec-title">Citing AI — <span>The Right Way</span></h2>
+        <p class="sec-lead">When AI tools contribute to your work, they must be attributed correctly. Different use cases require different citation approaches.</p>
+        <div class="citation-examples">
+          <div class="ce-item">
+            <div class="ce-tag">In the Methods Section</div>
+            <div class="ce-text">"Literature search was supported by Elicit (elicit.com, accessed May 2026). All identified papers were manually verified and read in full. Language editing was performed with assistance from ChatGPT (OpenAI, GPT-4o, accessed April 2026), with all content reviewed and revised by the authors."</div>
+          </div>
+          <div class="ce-item">
+            <div class="ce-tag">In Acknowledgements</div>
+            <div class="ce-text">"The authors used Claude 3.7 Sonnet (Anthropic) for grammar and clarity editing of this manuscript. The AI tool did not contribute to the scientific content, analysis or conclusions."</div>
+          </div>
+          <div class="ce-item">
+            <div class="ce-tag">In Reference List (APA style)</div>
+            <div class="ce-text">OpenAI. (2024). ChatGPT (GPT-4o) [Large language model]. https://chat.openai.com</div>
+          </div>
+          <div class="ce-item">
+            <div class="ce-tag">⚠️ Never Do This</div>
+            <div class="ce-text" style="color:var(--red);">Do not cite AI-generated references without verifying they exist in a real database (Google Scholar, PubMed, IEEE Xplore, Scopus). AI-hallucinated citations are a common and serious error.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTEGRITY CHECKLIST -->
+      <section class="sec" id="r-checklist">
+        <p class="sec-tag">Before You Submit</p>
+        <h2 class="sec-title">Research Integrity <span>Checklist</span></h2>
+        <p class="sec-lead">Run through this checklist before submitting any paper, conference abstract, grant application or thesis chapter.</p>
+        <div class="checklist">
+          <div class="cl-group">
+            <div class="cl-head">Authorship</div>
+            <div class="cl-item"><span class="cl-box">☐</span>All listed authors meet the institutional authorship criteria</div>
+            <div class="cl-item"><span class="cl-box">☐</span>No AI tool is listed as an author</div>
+            <div class="cl-item"><span class="cl-box">☐</span>All contributors who do not qualify as authors are acknowledged</div>
+          </div>
+          <div class="cl-group">
+            <div class="cl-head">AI Disclosure</div>
+            <div class="cl-item"><span class="cl-box">☐</span>All AI tools used are named and disclosed (name + version)</div>
+            <div class="cl-item"><span class="cl-box">☐</span>The role of each AI tool is described in Methods or Acknowledgements</div>
+            <div class="cl-item"><span class="cl-box">☐</span>AI disclosure follows the target journal's policy</div>
+          </div>
+          <div class="cl-group">
+            <div class="cl-head">References</div>
+            <div class="cl-item"><span class="cl-box">☐</span>Every reference has been manually verified (paper exists, details are correct)</div>
+            <div class="cl-item"><span class="cl-box">☐</span>No AI-hallucinated references are included</div>
+            <div class="cl-item"><span class="cl-box">☐</span>DOIs or stable URLs are provided where available</div>
+          </div>
+          <div class="cl-group">
+            <div class="cl-head">Data Integrity</div>
+            <div class="cl-item"><span class="cl-box">☐</span>No confidential or participant data was entered into a public AI tool</div>
+            <div class="cl-item"><span class="cl-box">☐</span>Data is stored on institution-approved servers</div>
+            <div class="cl-item"><span class="cl-box">☐</span>Ethics clearance is in place for the study design and data handling</div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /tab-research -->
+
+
+    <!-- ═══════════════════════════════════
+         TAB 4: ETHICS
+         ═══════════════════════════════════ -->
+    <div class="tab-content hidden" id="tab-ethics">
+
+      <!-- WHY ETHICS MATTERS -->
+      <section class="sec" id="e-why">
+        <p class="sec-tag">Ethical AI</p>
+        <h2 class="sec-title">Why AI Ethics <span>Matters to You</span></h2>
+        <p class="sec-lead">AI systems are not neutral. They reflect the choices of their designers, the biases in their training data, and the values of the institutions that deploy them. As engineers and researchers who will build, deploy or advise on AI systems, your ethical awareness is not optional — it is a professional duty.</p>
+        <div class="pullquote">
+          "Technology is neither good nor bad; nor is it neutral." — Melvin Kranzberg's First Law of Technology
+        </div>
+        <div class="ethics-intro-cards">
+          <div class="ei-card"><div class="ei-icon">⚠️</div><h3>AI can harm people</h3><p>Biased hiring algorithms, discriminatory lending models, surveillance systems — unethical AI has real consequences for real people.</p></div>
+          <div class="ei-card"><div class="ei-icon">🌍</div><h3>AI shapes society</h3><p>Recommendation systems influence beliefs. Automated decisions affect livelihoods. Engineers who build these systems bear responsibility.</p></div>
+          <div class="ei-card"><div class="ei-icon">⚖️</div><h3>Ethics is a professional skill</h3><p>IEEE, ISTE, and major engineering bodies now list ethical AI competence as a core professional requirement — not an elective.</p></div>
+        </div>
+      </section>
+
+      <!-- CORE PRINCIPLES -->
+      <section class="sec" id="e-principles">
+        <p class="sec-tag">Core Ethical Principles</p>
+        <h2 class="sec-title">Five Pillars of <span>Responsible AI</span></h2>
+        <p class="sec-lead">These five principles — drawn from UNESCO, the EU AI Act, and IEEE Ethically Aligned Design — form the foundation of ethical AI practice.</p>
+        <div class="ethics-pillars">
+          <div class="ep-card ep-blue">
+            <div class="ep-num">01</div>
+            <div class="ep-icon">🔍</div>
+            <h3>Transparency</h3>
+            <p>AI systems and their limitations should be explainable to the people they affect. Hidden AI decision-making in high-stakes contexts (hiring, credit, healthcare) is ethically problematic. Always disclose when AI has been used.</p>
+          </div>
+          <div class="ep-card ep-green">
+            <div class="ep-num">02</div>
+            <div class="ep-icon">⚖️</div>
+            <h3>Fairness &amp; Non-discrimination</h3>
+            <p>AI must not systematically disadvantage people based on gender, race, religion, caste, disability or socioeconomic status. Engineers must test for and mitigate bias before deployment.</p>
+          </div>
+          <div class="ep-card ep-purple">
+            <div class="ep-num">03</div>
+            <div class="ep-icon">🔒</div>
+            <h3>Privacy &amp; Data Rights</h3>
+            <p>Individuals have the right to know what data is collected, how it is used, and to have it deleted. AI systems must be designed with privacy by design — not added as an afterthought.</p>
+          </div>
+          <div class="ep-card ep-orange">
+            <div class="ep-num">04</div>
+            <div class="ep-icon">👤</div>
+            <h3>Human Accountability</h3>
+            <p>AI cannot be held responsible for its outputs. A human must always be identifiable as the accountable decision-maker. "The AI decided" is never an acceptable defence for harm caused.</p>
+          </div>
+          <div class="ep-card ep-teal">
+            <div class="ep-num">05</div>
+            <div class="ep-icon">🌱</div>
+            <h3>Sustainability &amp; Beneficence</h3>
+            <p>AI should benefit humanity and the environment. Systems should be designed for long-term societal good — not just short-term efficiency or profit. Energy use and environmental impact must be considered.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- BIAS & FAIRNESS -->
+      <section class="sec" id="e-bias">
+        <p class="sec-tag">Bias &amp; Fairness</p>
+        <h2 class="sec-title">AI Bias — <span>Recognise and Resist It</span></h2>
+        <p class="sec-lead">AI models learn from historical data — which often encodes historical injustices. Understanding where bias enters helps you build fairer systems and use AI more critically.</p>
+        <div class="bias-flow">
+          <div class="bf-step"><div class="bf-icon">📦</div><h4>Biased Training Data</h4><p>If historical data reflects discrimination (e.g., fewer women in technical roles), the model learns and replicates that discrimination.</p></div>
+          <div class="bf-arrow">→</div>
+          <div class="bf-step"><div class="bf-icon">⚙️</div><h4>Biased Model</h4><p>The model assigns higher scores to candidates who match the historical pattern — even when the pattern reflects bias, not merit.</p></div>
+          <div class="bf-arrow">→</div>
+          <div class="bf-step"><div class="bf-icon">🚫</div><h4>Discriminatory Output</h4><p>Real people are denied jobs, loans or opportunities based on patterns that encode historical inequality — amplified at scale.</p></div>
+        </div>
+        <div class="cards2" style="margin-top:20px;">
+          <div class="card card-blue">
+            <div class="c-icon">🇮🇳</div>
+            <h3>AI Bias in Indian Contexts</h3>
+            <ul>
+              <li>Most large AI models are trained predominantly on English-language, Western data</li>
+              <li>Indian languages, names and contexts are often under-represented</li>
+              <li>Facial recognition systems have shown higher error rates on darker skin tones</li>
+              <li>Credit scoring AI may disadvantage rural and informal-economy workers</li>
+              <li>Always validate AI outputs for your specific Indian engineering context</li>
+            </ul>
+          </div>
+          <div class="card card-green">
+            <div class="c-icon">🛠️</div>
+            <h3>What You Can Do</h3>
+            <ul>
+              <li>Ask: "Who is NOT represented in this training data?"</li>
+              <li>Test your AI system on diverse demographic groups before deployment</li>
+              <li>Document bias testing in your project report</li>
+              <li>Use fairness-aware ML libraries (Fairlearn, AIF360) where applicable</li>
+              <li>Report AI bias you observe — to faculty, to the tool developer, publicly</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRIVACY & CONSENT -->
+      <section class="sec" id="e-privacy">
+        <p class="sec-tag">Privacy &amp; Consent</p>
+        <h2 class="sec-title">Data Rights in the <span>Age of AI</span></h2>
+        <p class="sec-lead">AI systems are often data-hungry. Ethical AI practice requires that data collection is lawful, consensual, purposeful and proportionate.</p>
+        <div class="privacy-principles">
+          <div class="pp-item"><div class="pp-icon">✅</div><div><h4>Consent must be informed</h4><p>People must understand what they are consenting to — in plain language, not buried in terms of service. Consent for one purpose does not extend to another.</p></div></div>
+          <div class="pp-item"><div class="pp-icon">✅</div><div><h4>Data minimisation</h4><p>Collect only the data you actually need for the stated purpose. Storing excess data creates excess risk.</p></div></div>
+          <div class="pp-item"><div class="pp-icon">✅</div><div><h4>Purpose limitation</h4><p>Data collected for one purpose (e.g., attendance tracking) must not be repurposed without fresh consent (e.g., behavioural analysis).</p></div></div>
+          <div class="pp-item"><div class="pp-icon">✅</div><div><h4>Right to explanation</h4><p>Under India's DPDP Act 2023, individuals have the right to know how automated decisions affecting them were made.</p></div></div>
+          <div class="pp-item"><div class="pp-icon">✅</div><div><h4>Children and students</h4><p>Student data carries special protections. Any AI system that processes student data requires institutional ethics clearance and explicit parental consent for minors.</p></div></div>
+        </div>
+      </section>
+
+      <!-- ENVIRONMENTAL IMPACT -->
+      <section class="sec" id="e-environment">
+        <p class="sec-tag">Environmental Responsibility</p>
+        <h2 class="sec-title">The Hidden Cost of <span>Large AI Models</span></h2>
+        <p class="sec-lead">Every AI query consumes energy. Training large AI models has a significant carbon footprint. Responsible AI use includes considering environmental impact — especially at scale.</p>
+        <div class="env-grid">
+          <div class="env-stat"><div class="env-num">~500 ml</div><div class="env-lbl">Water evaporated per 20–50 ChatGPT queries (for data centre cooling)</div></div>
+          <div class="env-stat"><div class="env-num">~10×</div><div class="env-lbl">Energy used per AI query vs. a standard Google search</div></div>
+          <div class="env-stat"><div class="env-num">552 t CO₂</div><div class="env-lbl">Equivalent carbon footprint of training a single large language model</div></div>
+        </div>
+        <div class="callout callout-info" style="margin-top:18px;">
+          <div class="callout-icon">🌱</div>
+          <p><strong>Practical green AI habits:</strong> Use smaller, task-specific models where possible. Avoid repeated large queries for trivial tasks. When building AI systems, consider model efficiency as a design criterion alongside accuracy. Report environmental impact in research papers where feasible.</p>
+        </div>
+      </section>
+
+      <!-- EQUITY & ACCESS -->
+      <section class="sec" id="e-equity">
+        <p class="sec-tag">Digital Equity</p>
+        <h2 class="sec-title">The AI Divide — <span>Who Gets Left Behind</span></h2>
+        <p class="sec-lead">Access to powerful AI tools is not equal. The AI divide risks deepening existing inequalities — globally and within India. Ethical engineers design for everyone.</p>
+        <div class="equity-split">
+          <div class="es-side es-have">
+            <h3>Those with AI Access</h3>
+            <ul>
+              <li>High-speed internet</li>
+              <li>Paid AI subscriptions</li>
+              <li>English-language fluency</li>
+              <li>Devices that run AI tools</li>
+              <li>AI literacy and training</li>
+            </ul>
+          </div>
+          <div class="es-vs">⟺</div>
+          <div class="es-side es-havenot">
+            <h3>Those Without</h3>
+            <ul>
+              <li>Low-bandwidth or no internet</li>
+              <li>Cannot afford paid tools</li>
+              <li>Use regional Indian languages</li>
+              <li>Older or low-spec devices</li>
+              <li>No exposure to AI education</li>
+            </ul>
+          </div>
+        </div>
+        <div class="callout callout-warning" style="margin-top:18px;">
+          <div class="callout-icon">⚠️</div>
+          <p><strong>As a MITAOE engineer or researcher:</strong> When designing AI-assisted systems or assessments, always ask — "Does this work for someone without a paid subscription, high-speed internet, or English fluency?" This is not a theoretical question. It is a design requirement.</p>
+        </div>
+      </section>
+
+      <!-- ETHICAL SCENARIOS GAME -->
+      <section class="sec" id="e-scenarios">
+        <p class="sec-tag">Interactive Ethics</p>
+        <h2 class="sec-title">Ethical Scenarios — <span>What Would You Do?</span></h2>
+        <p class="sec-lead">Work through these real-world AI dilemmas. Choose your response, then reveal the ethical analysis. There are rarely perfect answers — the goal is to develop your ethical reasoning.</p>
+
+        <div class="scenario-game" id="scenario-game">
+
+          <div class="scenario active" data-scenario="1">
+            <div class="sc-header"><span class="sc-num">Scenario 1 of 6</span><span class="sc-tag">Academic Integrity</span></div>
+            <div class="sc-situation">
+              <div class="sc-icon">📝</div>
+              <p>You have a project report due tomorrow. You've done the work but haven't had time to write it up properly. You ask ChatGPT to write the report based on your notes and data. You read through it, it's accurate, and you submit it with minor edits. Your course is at Level 3 (grammar only). <strong>What are the ethical issues?</strong></p>
+            </div>
+            <div class="sc-choices">
+              <button class="sc-btn" onclick="revealAnalysis(1, 'A')">A) This is fine — my ideas, my data, just AI writing</button>
+              <button class="sc-btn" onclick="revealAnalysis(1, 'B')">B) This violates Level 3 — AI wrote the substantive content</button>
+              <button class="sc-btn" onclick="revealAnalysis(1, 'C')">C) It depends — if I disclose it, it should be okay</button>
+            </div>
+            <div class="sc-analysis hidden" id="analysis-1">
+              <div class="sca-verdict sca-wrong" id="verdict-1-A">❌ Option A — Incorrect</div>
+              <div class="sca-verdict sca-correct" id="verdict-1-B">✅ Option B — Correct</div>
+              <div class="sca-verdict sca-partial" id="verdict-1-C">⚠️ Option C — Partially right, but still a violation</div>
+              <div class="sca-text">
+                <p><strong>Analysis:</strong> At Level 3, AI may only be used for grammar and formatting. Writing substantive content — even based on your own notes — goes beyond the permitted level. The ideas being yours does not make the <em>expression</em> yours when AI generated it.</p>
+                <p><strong>Even with disclosure,</strong> this violates Level 3. Disclosure is required, but it does not legalise out-of-bounds use. The correct action was to write the report yourself and use AI only to check grammar.</p>
+                <p><strong>What to do instead:</strong> Write the report yourself (even imperfectly), use AI only to check grammar, and disclose that use. If you need an extension, ask for one before the deadline.</p>
+              </div>
+              <div class="sc-nav"><button class="sc-next" onclick="nextScenario(2)">Next Scenario →</button></div>
+            </div>
+          </div>
+
+          <div class="scenario hidden" data-scenario="2">
+            <div class="sc-header"><span class="sc-num">Scenario 2 of 6</span><span class="sc-tag">Research Integrity</span></div>
+            <div class="sc-situation">
+              <div class="sc-icon">🔬</div>
+              <p>You are writing your M.Tech thesis literature review. You use an AI tool that gives you 15 references, all looking plausible — journal names, authors, years. You cite all 15 without checking them. Later, your supervisor finds that 6 of the references don't exist. <strong>Who is responsible?</strong></p>
+            </div>
+            <div class="sc-choices">
+              <button class="sc-btn" onclick="revealAnalysis(2, 'A')">A) The AI tool — it fabricated the references</button>
+              <button class="sc-btn" onclick="revealAnalysis(2, 'B')">B) You — as the author, you are responsible for every citation</button>
+              <button class="sc-btn" onclick="revealAnalysis(2, 'C')">C) Shared responsibility — you and the AI tool's developers</button>
+            </div>
+            <div class="sc-analysis hidden" id="analysis-2">
+              <div class="sca-verdict sca-wrong" id="verdict-2-A">❌ Option A — Incorrect</div>
+              <div class="sca-verdict sca-correct" id="verdict-2-B">✅ Option B — Correct</div>
+              <div class="sca-verdict sca-wrong" id="verdict-2-C">❌ Option C — Incorrect</div>
+              <div class="sca-text">
+                <p><strong>Analysis:</strong> You are 100% responsible. AI tools are known to hallucinate references — this is a well-documented limitation, not a surprise. Academic norms have always required authors to verify their references personally.</p>
+                <p><strong>This constitutes citation fabrication</strong> — a form of research misconduct — regardless of how the error originated. "The AI did it" is not a defence in any academic integrity proceeding.</p>
+                <p><strong>Rule:</strong> Every reference you submit must be verified by you against a real database (Google Scholar, PubMed, IEEE Xplore, Scopus). No exceptions.</p>
+              </div>
+              <div class="sc-nav"><button class="sc-prev" onclick="prevScenario(1)">← Previous</button><button class="sc-next" onclick="nextScenario(3)">Next Scenario →</button></div>
+            </div>
+          </div>
+
+          <div class="scenario hidden" data-scenario="3">
+            <div class="sc-header"><span class="sc-num">Scenario 3 of 6</span><span class="sc-tag">Privacy</span></div>
+            <div class="sc-situation">
+              <div class="sc-icon">🔒</div>
+              <p>You are doing a capstone project on student performance. You want AI to help identify patterns in dropout risk. You upload a dataset with student names, roll numbers, attendance, grades and family income to ChatGPT to analyse it. <strong>What are the problems with this?</strong></p>
+            </div>
+            <div class="sc-choices">
+              <button class="sc-btn" onclick="revealAnalysis(3, 'A')">A) No problem — the data is for academic use, not commercial</button>
+              <button class="sc-btn" onclick="revealAnalysis(3, 'B')">B) Major privacy violation — student data cannot go into a public AI tool</button>
+              <button class="sc-btn" onclick="revealAnalysis(3, 'C')">C) It's okay if I delete it from ChatGPT after the analysis</button>
+            </div>
+            <div class="sc-analysis hidden" id="analysis-3">
+              <div class="sca-verdict sca-wrong" id="verdict-3-A">❌ Option A — Incorrect</div>
+              <div class="sca-verdict sca-correct" id="verdict-3-B">✅ Option B — Correct</div>
+              <div class="sca-verdict sca-wrong" id="verdict-3-C">❌ Option C — Incorrect</div>
+              <div class="sca-text">
+                <p><strong>Analysis:</strong> This is a serious privacy violation. Personally identifiable student data (names, roll numbers, grades, family income) is protected under India's DPDP Act 2023 and institutional data policies. Uploading it to a public AI tool violates student privacy rights — regardless of your academic purpose.</p>
+                <p><strong>"Deleting from ChatGPT"</strong> does not undo data transmission. OpenAI's servers may retain conversation data per their privacy policy. Once data is uploaded, you cannot control where it goes.</p>
+                <p><strong>Correct approach:</strong> Anonymise the dataset fully (no names, no roll numbers, replace income with brackets), obtain ethics clearance, and use a locally-run or privacy-compliant tool. Better still, work with aggregated data only.</p>
+              </div>
+              <div class="sc-nav"><button class="sc-prev" onclick="prevScenario(2)">← Previous</button><button class="sc-next" onclick="nextScenario(4)">Next Scenario →</button></div>
+            </div>
+          </div>
+
+          <div class="scenario hidden" data-scenario="4">
+            <div class="sc-header"><span class="sc-num">Scenario 4 of 6</span><span class="sc-tag">Bias</span></div>
+            <div class="sc-situation">
+              <div class="sc-icon">⚖️</div>
+              <p>Your team is building an AI-based resume screening system for a local manufacturing company. You train it on the company's historical hiring data (last 10 years). The model achieves 90% accuracy on the test set. In deployment, it consistently ranks female candidates lower for engineering roles. <strong>What is happening?</strong></p>
+            </div>
+            <div class="sc-choices">
+              <button class="sc-btn" onclick="revealAnalysis(4, 'A')">A) The model is correct — it's reflecting market reality</button>
+              <button class="sc-btn" onclick="revealAnalysis(4, 'B')">B) Historical bias in hiring data has been learned and amplified by the model</button>
+              <button class="sc-btn" onclick="revealAnalysis(4, 'C')">C) The model needs more data — 10 years isn't enough</button>
+            </div>
+            <div class="sc-analysis hidden" id="analysis-4">
+              <div class="sca-verdict sca-wrong" id="verdict-4-A">❌ Option A — Incorrect</div>
+              <div class="sca-verdict sca-correct" id="verdict-4-B">✅ Option B — Correct</div>
+              <div class="sca-verdict sca-wrong" id="verdict-4-C">❌ Option C — Incorrect</div>
+              <div class="sca-text">
+                <p><strong>Analysis:</strong> The model learned from historical hiring decisions that may have been discriminatory. "90% accuracy" is measuring the model's ability to replicate past decisions — including past biases. High accuracy does not mean fairness.</p>
+                <p><strong>This is algorithmic discrimination</strong> — illegal under India's Constitution (Article 15) and increasingly under global AI regulation. Deploying this system harms candidates and exposes the company to legal liability.</p>
+                <p><strong>What you must do:</strong> Audit training data for demographic imbalance. Use fairness metrics (demographic parity, equalised odds). Test outputs across gender, caste, location. Redesign the system with fairness constraints. Document the bias audit in your project report.</p>
+              </div>
+              <div class="sc-nav"><button class="sc-prev" onclick="prevScenario(3)">← Previous</button><button class="sc-next" onclick="nextScenario(5)">Next Scenario →</button></div>
+            </div>
+          </div>
+
+          <div class="scenario hidden" data-scenario="5">
+            <div class="sc-header"><span class="sc-num">Scenario 5 of 6</span><span class="sc-tag">Transparency</span></div>
+            <div class="sc-situation">
+              <div class="sc-icon">🤖</div>
+              <p>A startup approaches you to build a chatbot for a mental health helpline. The chatbot will respond to users in distress — but users will not be told they are talking to an AI. The startup says "users respond better when they think it's a human." <strong>Should you build it?</strong></p>
+            </div>
+            <div class="sc-choices">
+              <button class="sc-btn" onclick="revealAnalysis(5, 'A')">A) Yes — the better outcome (user wellbeing) justifies the deception</button>
+              <button class="sc-btn" onclick="revealAnalysis(5, 'B')">B) No — deceiving vulnerable users about AI identity is unethical and potentially harmful</button>
+              <button class="sc-btn" onclick="revealAnalysis(5, 'C')">C) Maybe — it depends on whether the chatbot is effective</button>
+            </div>
+            <div class="sc-analysis hidden" id="analysis-5">
+              <div class="sca-verdict sca-wrong" id="verdict-5-A">❌ Option A — Incorrect</div>
+              <div class="sca-verdict sca-correct" id="verdict-5-B">✅ Option B — Correct</div>
+              <div class="sca-verdict sca-wrong" id="verdict-5-C">❌ Option C — Incorrect</div>
+              <div class="sca-text">
+                <p><strong>Analysis:</strong> Deceiving vulnerable users — especially in high-stakes mental health contexts — is a serious ethical violation. The principle of transparency requires that users know when they are interacting with AI. This is now enshrined in the EU AI Act and is expected in India's AI governance framework.</p>
+                <p><strong>The risk of harm is real:</strong> A user in crisis may disclose information they would not share with an AI, may rely on the "relationship" in ways that cause harm when they discover the deception, or may receive inadequate support that a real human would escalate.</p>
+                <p><strong>Effectiveness does not justify deception.</strong> You can build an effective, transparent AI mental health tool that clearly identifies itself as AI. Refuse to build the undisclosed version and explain why.</p>
+              </div>
+              <div class="sc-nav"><button class="sc-prev" onclick="prevScenario(4)">← Previous</button><button class="sc-next" onclick="nextScenario(6)">Next Scenario →</button></div>
+            </div>
+          </div>
+
+          <div class="scenario hidden" data-scenario="6">
+            <div class="sc-header"><span class="sc-num">Scenario 6 of 6</span><span class="sc-tag">Accountability</span></div>
+            <div class="sc-situation">
+              <div class="sc-icon">🏭</div>
+              <p>An AI quality-control system you designed for a factory incorrectly clears a faulty batch of components. The components are used in a medical device, which fails in a patient. The company says "the AI made the decision." <strong>Who is accountable?</strong></p>
+            </div>
+            <div class="sc-choices">
+              <button class="sc-btn" onclick="revealAnalysis(6, 'A')">A) The AI system — it made the wrong decision</button>
+              <button class="sc-btn" onclick="revealAnalysis(6, 'B')">B) The company — they deployed the system</button>
+              <button class="sc-btn" onclick="revealAnalysis(6, 'C')">C) Multiple humans — the engineer, the company, and possibly the AI developer</button>
+            </div>
+            <div class="sc-analysis hidden" id="analysis-6">
+              <div class="sca-verdict sca-wrong" id="verdict-6-A">❌ Option A — Incorrect</div>
+              <div class="sca-verdict sca-wrong" id="verdict-6-B">❌ Option B — Partially correct, but incomplete</div>
+              <div class="sca-verdict sca-correct" id="verdict-6-C">✅ Option C — Correct</div>
+              <div class="sca-text">
+                <p><strong>Analysis:</strong> AI cannot be held legally or morally accountable — it has no legal standing. Accountability always returns to the humans in the chain: the engineer who designed and validated the system, the company who deployed it without adequate human oversight, and potentially the AI tool's developers if there was a known defect.</p>
+                <p><strong>In safety-critical applications</strong> (medical, aviation, structural, automotive), AI must never be the sole decision-maker. A human override and review step is a mandatory engineering requirement — not optional.</p>
+                <p><strong>Your responsibility as an engineer:</strong> Design safety margins. Insist on human-in-the-loop for high-stakes decisions. Document system limitations clearly. Never overpromise AI reliability. This is not just ethics — it is professional engineering practice.</p>
+              </div>
+              <div class="sc-complete">
+                <div class="scc-icon">🎓</div>
+                <h3>All Scenarios Complete</h3>
+                <p>Ethical reasoning is not about finding the "right" answer quickly — it's about developing the habit of asking the right questions before you build, deploy or use AI systems.</p>
+                <button class="sc-next" onclick="resetScenarios()">↺ Restart Scenarios</button>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /scenario-game -->
+      </section>
+
+      <!-- DECISION FRAMEWORK -->
+      <section class="sec" id="e-framework">
+        <p class="sec-tag">Ethical Decision-Making</p>
+        <h2 class="sec-title">The MITAOE <span>AI Ethics Framework</span></h2>
+        <p class="sec-lead">When you face an uncertain AI decision — in your studies, research or professional life — run through these five questions.</p>
+        <div class="framework-steps">
+          <div class="fw-step">
+            <div class="fw-q">Q1</div>
+            <div class="fw-body">
+              <h4>Who could be harmed?</h4>
+              <p>Identify every group of people affected by this AI decision — including those not in the room. Consider direct and indirect harms, short-term and long-term.</p>
+            </div>
+          </div>
+          <div class="fw-step">
+            <div class="fw-q">Q2</div>
+            <div class="fw-body">
+              <h4>Is this transparent?</h4>
+              <p>Would the affected people know AI is involved? Would they understand how the decision was made? Would they consent if they knew?</p>
+            </div>
+          </div>
+          <div class="fw-step">
+            <div class="fw-q">Q3</div>
+            <div class="fw-body">
+              <h4>Is this fair?</h4>
+              <p>Does this system work equally well for different demographic groups? Have you tested it? Are the consequences of errors distributed equitably?</p>
+            </div>
+          </div>
+          <div class="fw-step">
+            <div class="fw-q">Q4</div>
+            <div class="fw-body">
+              <h4>Who is accountable?</h4>
+              <p>Is there a named, reachable human who is responsible for this AI's decisions? Is there a redress mechanism for people harmed by the system?</p>
+            </div>
+          </div>
+          <div class="fw-step">
+            <div class="fw-q">Q5</div>
+            <div class="fw-body">
+              <h4>Would you be comfortable if it were public?</h4>
+              <p>If the design choices, training data, and outcomes of this system were reported in a newspaper, would you be comfortable? If not — reconsider.</p>
+            </div>
+          </div>
+        </div>
+        <div class="callout callout-info" style="margin-top:20px;">
+          <div class="callout-icon">📚</div>
+          <p><strong>Further reading:</strong> UNESCO Recommendation on the Ethics of AI (2021) · IEEE Ethically Aligned Design · EU AI Act 2024 · NITI Aayog Responsible AI for All · India's Digital Personal Data Protection Act 2023 · MeitY Draft AI Governance Framework</p>
+        </div>
+      </section>
+
+    </div><!-- /tab-ethics -->
+
+  </main>
+</div><!-- /page-layout -->
+
+
+<!-- ══════════════════ FOOTER ══════════════════ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div>
+        <img src="img/logo.png" alt="MIT Academy of Engineering" class="footer-logo" />
+        <p style="margin-top:10px;">AI Integration Guidelines — a practical companion to the MITAOE AI Integrated Teaching &amp; Research Policy, Academic Year 2025–2026.</p>
+        <div class="f-pills">
+          <span class="f-pill">Rev. 0.0</span>
+          <span class="f-pill">Effective May 2026</span>
+          <span class="f-pill">Quarterly Review</span>
+        </div>
+      </div>
+      <div>
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="#" onclick="switchTab('teachers');return false;">Teachers</a></li>
+          <li><a href="#" onclick="switchTab('students');return false;">Students</a></li>
+          <li><a href="#" onclick="switchTab('research');return false;">Research</a></li>
+          <li><a href="#" onclick="switchTab('ethics');return false;">Ethics</a></li>
+          <li><a href="#" onclick="switchTab('teachers');document.getElementById('disclosure').scrollIntoView();return false;">Disclosure Format</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Governance</h4>
+        <ul>
+          <li><a href="#">Academic Council</a></li>
+          <li><a href="#">Board of Studies</a></li>
+          <li><a href="#">AI Implementation Committee</a></li>
+          <li><a href="#">Research Ethics Committee</a></li>
+          <li><a href="https://mitaoe.ac.in/" target="_blank" rel="noopener">mitaoe.ac.in ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 MIT Academy of Engineering, Alandi (D), Pune – 412 105, Maharashtra, India</span>
+      <span>Approved by Academic Council &amp; Board of Studies · <a href="https://mitaoe.ac.in/" target="_blank" rel="noopener">mitaoe.ac.in</a></span>
+    </div>
+  </div>
+</footer>
+
+<button id="backtop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
